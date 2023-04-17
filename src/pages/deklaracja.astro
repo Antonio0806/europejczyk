@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Zadanie na sprawność Europejczyk ***">
+	<main>
+		<h1><span class="text-gradient">Deklaracja Schumana</span> i jej znaczenie dla pokojowego jednoczenia kontynentu</h1>
+		<p class="instructions">
+			<strong>Deklaracja Schumana</strong> była oświadczeniem francuskiego ministra spraw zagranicznych <strong> Roberta Schumana</strong> z 9 maja 1950 r., w którym zaproponował utworzenie Europejskiej Wspólnoty Węgla i Stali (EWWiS). EWWiS miała na celu połączenie przemysłu węglowego i stalowego Francji i Niemiec oraz innych krajów europejskich na wspólnym rynku nadzorowanym przez niezależny organ. Deklaracja Schumana jest uważana za ważny krok w kierunku pokojowego zjednoczenia Europy i ustanowienia <strong>Unii Europejskiej (UE)</strong>.
+
+Znaczenie Deklaracji Schumana polega na jej roli w stworzeniu podwalin pod rozwój UE. Proponując utworzenie wspólnego rynku węgla i stali, Schuman miał na celu promowanie współpracy gospodarczej i współzależności między Francją i Niemcami, które od wieków były zaciekłymi wrogami. Pomysł polegał na stworzeniu struktury, która uczyniłaby wojnę między tymi dwoma krajami i innymi krajami w Europie „nie tylko nie do pomyślenia, ale także materialnie niemożliwą”. EWWiS powstała w następnym roku wraz z podpisaniem traktatu paryskiego i odniosła sukces w promowaniu wzrostu gospodarczego i stabilności w Europie.
+
+Sukces EWWiS utorował drogę do dalszej integracji w Europie, co doprowadziło do powstania w 1957 r. <strong>Europejskiej Wspólnoty Gospodarczej (EWG)</strong>, która później została przemianowana na <strong>Unię Europejską</strong>. Deklaracja Schumana jest zatem postrzegana jako kamień milowy w historii integracji europejskiej i symbol pokojowego zjednoczenia kontynentu. Jest obchodzony co roku 9 maja jako Dzień Europy.
+		</p>
+
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 240ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 2;
+        font-size: 1.5em;
+        font-weight: 500;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>

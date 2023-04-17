@@ -1,0 +1,73 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Zadanie na sprawność Europejczyk ***">
+	<main>
+		<h1>Przykładowy plan wycieczki do <span class="text-gradient">Włoch</span></h1>
+		<p class="instructions">
+			Aby podróżować w <strong>Strefie Schengen</strong>, która jest strefą 26 krajów europejskich, które zniosły paszporty i inne rodzaje kontroli granicznych na swoich wzajemnych granicach, generalnie musisz spełnić następujące wymagania:
+        </p>    
+            <p class="instructions">- <strong>Ważny paszport</strong>: Musisz posiadać ważny paszport wydany przez kraj ojczysty, który powinien pozostać ważny przez co najmniej trzy miesiące po planowanej dacie wyjazdu ze strefy Schengen.</p>
+            <p class="instructions">- <strong>Wiza</strong>: W zależności od narodowości możesz potrzebować wizy, aby wjechać do strefy Schengen. Obywatele niektórych krajów, takich jak Stany Zjednoczone, Kanada i Australia, mogą wjechać bez wizy na pobyt do 90 dni w dowolnym okresie 180-dniowym. Jednak obywatele innych krajów, takich jak Chiny czy Indie, mogą potrzebować wcześniejszego ubiegania się o wizę Schengen.</p>
+            <p class="instructions">- <strong>Ubezpieczenie podróżne</strong>: Zaleca się posiadanie ubezpieczenia podróżnego, które obejmuje nagłe przypadki medyczne i repatriację, a także inne nieoczekiwane zdarzenia, takie jak odwołanie podróży, utrata lub kradzież bagażu i tak dalej.</p>
+        <p class="instructions">
+            Teraz zaplanujmy wycieczkę do jednego kraju ze strefy Schengen, biorąc pod uwagę walory turystyczne.
+            Co powiesz na wycieczkę do Włoch, kraju bogatego w historię, kulturę i zachwycające naturalne krajobrazy? Oto kilka pomysłów:
+        </p>
+            <p class="instructions"> - <strong>Odwiedź Rzym</strong>: Rzym jest domem dla wielu kultowych zabytków, takich jak Koloseum, Panteon i Watykan. Możesz także spacerować urokliwymi uliczkami Trastevere, skosztować pysznych dań kuchni włoskiej i chłonąć tętniącą życiem atmosferę miasta.</p>
+            <p class="instructions"> - <strong>Poznaj Florencję</strong>: Florencja słynie ze sztuki i architektury, ze słynnymi zabytkami, takimi jak Duomo, Galeria Uffizi i Ponte Vecchio. Możesz także wybrać się na spacer po Ogrodach Boboli lub wspiąć się na Piazzale Michelangelo, aby podziwiać panoramę miasta.</p>
+            <p class="instructions"> - <strong>Zrelaksuj się na Riwierze Włoskiej</strong>: Riwiera Włoska to piękny obszar przybrzeżny, który rozciąga się od Genui do granicy z Francją. Możesz odwiedzić urocze nadmorskie miejscowości, takie jak Portofino czy Cinque Terre, wędrować malowniczymi szlakami lub po prostu rozkoszować się słońcem na plaży.</p>
+            <p class="instructions"> - <strong>Spróbuj włoskiego wina i jedzenia</strong>: Włochy słyną z wina i jedzenia, więc koniecznie spróbuj lokalnych specjałów, takich jak pizza, makarony, lody i oczywiście wino. Możesz wybrać się na wycieczkę winiarską po Toskanii lub odwiedzić lokalny targ, aby spróbować świeżych produktów.</p>
+
+            <p class="instructions"><strong>Pamiętaj</strong>, aby przed zaplanowaniem podróży sprawdzić dokładnie i zapoznać się z najnowszymi wymaganiami dot. podróży. </p>
+        
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 120ch;
+        font-weight: 700;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>

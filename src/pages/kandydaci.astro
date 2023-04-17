@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Zadanie na sprawność Europejczyk ***">
+<main>
+<h1>Aktualni kandydaci do dołączenia do UE</h1>
+<p class="instructions">
+Istnieje kilka krajów, które obecnie starają się o przystąpienie do Unii Europejskiej. Oto krótki przegląd:
+</p>
+<p class="instructions">
+<strong>Albania: </strong> 
+Albania jest oficjalnym kandydatem do członkostwa w UE od 2014 roku. Nadal jednak musi poczynić znaczne postępy w takich obszarach, jak praworządność, korupcja i przestępczość zorganizowana.
+</p>
+<p class="instructions">
+<strong>Czarnogóra: </strong>
+Czarnogóra rozpoczęła negocjacje akcesyjne z UE w 2012 r. i od tego czasu poczyniła postępy w takich obszarach, jak praworządność i reformy gospodarcze. Wciąż jednak stoi przed wyzwaniami związanymi z korupcją, wolnością mediów i prawami człowieka.
+</p>
+<p class="instructions">
+<strong>Macedonia Północna: </strong> 
+Macedonia Północna jest oficjalnym kandydatem do członkostwa w UE od 2005 r. W 2018 r. osiągnęła porozumienie z Grecją w sprawie zmiany nazwy z „Macedonia” na „Macedonia Północna”, rozwiązując długotrwały spór. Jednak nadal musi poczynić postępy w takich obszarach, jak praworządność, wolność mediów i korupcja.
+</p>
+<p class="instructions">
+<strong>Serbia: </strong> 
+Serbia rozpoczęła negocjacje akcesyjne z UE w 2014 r. Poczyniła postępy w takich dziedzinach, jak praworządność i gospodarka, ale nadal boryka się z wyzwaniami związanymi z korupcją, wolnością mediów i prawami człowieka.
+</p>
+<p class="instructions">
+<strong>Turcja: </strong> 
+Turcja kandyduje do członkostwa w UE od 1999 r., ale postęp jest powolny ze względu na obawy związane z prawami człowieka, wolnością mediów i rządami prawa. W ostatnich latach napięcia między Turcją a UE wzrosły i nie jest jasne, czy Turcja będzie nadal dążyć do członkostwa w UE.
+</p>
+<p class="instructions">
+Aby przystąpić do UE, kraje te muszą spełnić szereg kryteriów zwanych <strong>„kryteriami kopenhaskimi”</strong>, które obejmują:
+Stabilne instytucje gwarantujące demokrację, praworządność, prawa człowieka oraz poszanowanie i ochronę mniejszości.
+Funkcjonująca gospodarka rynkowa i zdolność do radzenia sobie z presją konkurencyjną i siłami rynkowymi w UE.
+Zdolność do podjęcia i realizacji zobowiązań wynikających z członkostwa w UE, w tym przyjęcia prawodawstwa i standardów UE.
+Oprócz spełnienia tych kryteriów, kraje kandydujące muszą również negocjować i wdrażać szereg przepisów i polityk UE oraz muszą wykazać się przywiązaniem do wartości i zasad UE. Proces akcesyjny może trwać kilka lat, a nawet dziesięcioleci, w zależności od postępów kraju i gotowości UE do przyjęcia nowych członków.
+</p>
+</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
